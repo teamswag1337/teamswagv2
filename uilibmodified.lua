@@ -501,9 +501,10 @@
   CheckArgs.Text = CheckArgs.Text or "Check"
   CheckArgs.Flag = CheckArgs.Flag or nil
   CheckArgs.Default = CheckArgs.Default or false
+  CheckArgs.State = CheckArgs.State or false					
   CheckArgs.Callback = CheckArgs.Callback or function() end
 
-  local State = false
+  local State = CheckArgs.State
   
   local CheckTable = {}
 

@@ -1,7 +1,7 @@
 --usage:
 
 --window:
-local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/teamswag1337/teamswagv2/main/uilibmodified.lua'))()
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/teamswag1337/teamswagv2/main/uilib.lua'))()
 local window = lib:AddWindow({Title="test", Desc="hi"})
 
 --making a button:

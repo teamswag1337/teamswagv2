@@ -1,4 +1,5 @@
 --delete if any:
+--update 15/10/2022 uis input
 if game.CoreGui:FindFirstChild('uilib') then
   game.CoreGui.uilib:Destroy()
 end
@@ -184,5 +185,13 @@ function self:AddToggle(Window, Options: table)
       ToggleClone.Parent = Window.Inner
   end
 end
+
+game:GetService("UserInputService").InputBegan:connect(function(key, proc)
+  if proc == false then
+      if key.KeyCode == Enum.KeyCode.P then
+        ScreenGui.Enabled = not ScreenGui.Enabled
+      end
+  end
+end)
 
 return self

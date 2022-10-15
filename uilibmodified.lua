@@ -167,6 +167,7 @@ function self:AddToggle(Window, Options: table)
   if Window then
       local ToggleClone = Toggle:Clone()
       ToggleClone.Name = ToggleName
+      ToggleClone.Text = Text.. " <font color=\"rgb(255,0,0)\">OFF</font>"
       if Default == true then
         ToggleClone.Text = Text.. " <font color=\"rgb(0,255,0)\">ON</font>"
       end
@@ -184,23 +185,4 @@ function self:AddToggle(Window, Options: table)
   end
 end
 
-
 return self
-                  
-                  --[[
-                  local testwin = self:AddWindow({Title="test", Desc="Test"})
-local testwin2 = self:AddWindow({Title="test2", Desc="Test2"})
-self:AddButton(testwin, {Function=function()
-    print("hi")
-end})
-self:AddToggle(testwin, {Text="ToggleTest", Default=true, Function=function(val)
-  print(val)
-end})
-self:AddInput(testwin, {Placeholder="enter no", Function=function(str)
-    print(str)
-end})
-self:AddInput(testwin, {Placeholder="enter yes", Enter=true, Function=function(str)
-    print(str, "hi")
-end})
-
-                  --]]

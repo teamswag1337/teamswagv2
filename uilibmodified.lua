@@ -185,7 +185,10 @@ function self:AddToggle(Window, Options: table)
 end
 
 
-local testwin = self:AddWindow({Title="test", Desc="Test"})
+return self
+                  
+                  --[[
+                  local testwin = self:AddWindow({Title="test", Desc="Test"})
 local testwin2 = self:AddWindow({Title="test2", Desc="Test2"})
 self:AddButton(testwin, {Function=function()
     print("hi")
@@ -200,4 +203,4 @@ self:AddInput(testwin, {Placeholder="enter yes", Enter=true, Function=function(s
     print(str, "hi")
 end})
 
-return self
+                  --]]

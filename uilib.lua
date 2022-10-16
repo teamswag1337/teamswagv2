@@ -109,11 +109,7 @@ function self:AddWindow(Options: table)
     WindowClone.desc.Text = Options.Desc or "No description."
     WindowClone.Parent = ScreenGui
     WindowClone.Name = Options.Title
-    if PreviousWindow == nil then
-      PreviousWindow = WindowClone
-    elseif PreviousWindow then
-        WindowClone.Position = UDim2.new(WindowClone.Position.X.Scale + 0.15, WindowClone.Position.X.Offset, WindowClone.Position.Y.Scale, WindowClone.Position.Y.Offset)
-    end
+    WindowClone.Position = UDim2.new(WindowClone.Position.X.Scale + 0.15, WindowClone.Position.X.Offset, WindowClone.Position.Y.Scale, WindowClone.Position.Y.Offset)
     return WindowClone
 end
 

@@ -144,22 +144,7 @@ function lib:Window(text, preset, closebind)
     UserInputService.InputBegan:Connect(
         function(io, p)
             if io.KeyCode == CloseBind then
-                if uitoggled == false then
-                    Main:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
-                    uitoggled = true
-                    wait(.5)
-                    ui.Enabled = true
-                else
-                    Main:TweenSize(
-                        UDim2.new(0, 560, 0, 319),
-                        Enum.EasingDirection.Out,
-                        Enum.EasingStyle.Quart,
-                        .6,
-                        true
-                    )
-                    ui.Enabled = false
-                    uitoggled = false
-                end
+                 ui.Enabled = not ui.Enabled
             end
         end
     )

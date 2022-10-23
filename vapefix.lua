@@ -148,7 +148,7 @@ function lib:Window(text, preset, closebind)
                     Main:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
                     uitoggled = true
                     wait(.5)
-                    ui.Enabled = false
+                    ui.Enabled = true
                 else
                     Main:TweenSize(
                         UDim2.new(0, 560, 0, 319),
@@ -157,7 +157,7 @@ function lib:Window(text, preset, closebind)
                         .6,
                         true
                     )
-                    ui.Enabled = true
+                    ui.Enabled = false
                     uitoggled = false
                 end
             end

@@ -22,7 +22,7 @@ local titlet = Instance.new("TextLabel")
 commandBar.Name = "commandBar"
 commandBar.Parent = game.CoreGui
 commandBar.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-commandBar.esetOnSpawn = false
+commandBar.ResetOnSpawn = false
 
 title.Name = "title"
 title.Parent = commandBar

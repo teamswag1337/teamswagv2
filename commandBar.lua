@@ -25,7 +25,7 @@ cmdBar.PlaceholderText = "Command"
 cmdBar.Text = ""
 cmdBar.TextColor3 = Color3.fromRGB(255, 255, 255)
 cmdBar.TextSize = 22.000
-cmdBar.TextStrokeTransparency = 0.500
+cmdBar.TextStrokeTransparency = 1
 cmdBar.TextWrapped = true
 
 return {commandBar, title, cmdBar}

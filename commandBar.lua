@@ -1,0 +1,31 @@
+local commandBar = Instance.new("ScreenGui")
+local title = Instance.new("Frame")
+local cmdBar = Instance.new("TextBox")
+commandBar.Name = "commandBar"
+commandBar.Parent = game.CoreGui
+commandBar.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+commandBar.ResetOnSpawn = false
+title.Name = "title"
+title.Parent = commandBar
+title.Active = true
+title.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+title.BorderColor3 = Color3.fromRGB(50, 50, 50)
+title.Position = UDim2.new(0.675036907, 0, 0.758241773, 0)
+title.Selectable = true
+title.Draggable = true
+title.Size = UDim2.new(0, 302, 0, 14)
+cmdBar.Name = "cmdBar"
+cmdBar.Parent = title
+cmdBar.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+cmdBar.BorderColor3 = Color3.fromRGB(40, 40, 40)
+cmdBar.Position = UDim2.new(0, 0, 1, 0)
+cmdBar.Size = UDim2.new(0, 302, 0, 50)
+cmdBar.Font = Enum.Font.SourceSansLight
+cmdBar.PlaceholderText = "Command"
+cmdBar.Text = ""
+cmdBar.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmdBar.TextSize = 22.000
+cmdBar.TextStrokeTransparency = 0.500
+cmdBar.TextWrapped = true
+
+return {commandBar, title, cmdBar}
